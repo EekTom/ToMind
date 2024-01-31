@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToMind</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <label for="menucheckbox" id="menuicon"></label>
+        <input type="checkbox" id="menucheckbox">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="therapy.html">Behandling</a></li>
+            <li><a href="assessment.html">Utredning</a></li>
+            <li><a href="screening.html" class="thisPage">Självskattning</a></li>
+            <li><a href="about.html">Om ToMind</a></li>
+        </ul>
+    </nav> 
+
+    <header>
+        <img src="img/ToMindLogo.png" alt="logo ToMind"> 
+    </header>
+
+    <main>
+        <h2>Självskattning av aktuella psykiska symtom</h2>
+        <p>Denna självskattning kan hjälpa dig att reflektera över olika symtom. Ta gärna kontakt om du önskar samtala om din skattning.</p>
+            <form name="screening" netlify>
+                <fieldset id="details">
+                    <legend>Fyll i följande information.</legend>
+                    <label for="name">* Namn: </label>
+                        <input type="text" id="name" name="name" required>
+                    <label for="date">* Datum: </label>
+                        <input type="date" id="date"  name="date" required>
+                </fieldset>
+
+                <fieldset id="questions">
+                    <legend>Hur mycket (eller hur ofta) har du besvärats av följande problem 
+                    under de senaste två (2) veckorna?</legend>
+                    <h4>Haft föga intresse eller glädje av att göra saker och ting?</h4>
+                        <label> 
+                            <input type="radio" name="depression1" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="depression1" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="depression1" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="depression1" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="depression1" value="4" required>Mycket
+                        </label>
+                   <h4>Känt dig nere, deprimerad eller hopplös till sinnes?</h4>
+                        <label> 
+                            <input type="radio" name="depression2" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="depression2" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="depression2" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="depression2" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="depression2" value="4" required>Mycket
+                        </label>
+                    <h4>Känt dig mer irriterad, sur eller arg än vanligt?</h4>
+                        <label> 
+                            <input type="radio" name="irritability" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="irritability" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="irritability" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="irritability" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="irritability" value="4" required>Mycket
+                        </label>
+                    <h4>Sovit mindre än vanligt, men ändå känt dig full av energi?</h4>
+                        <label> 
+                            <input type="radio" name="hypomania1" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="hypomania1" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="hypomania1" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="hypomania1" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="hypomania1" value="4" required>Mycket
+                        </label>
+                    <h4>Startat många fler projekt än vanligt eller gjort fler riskfyllda saker än
+                        vanligt?</h4>
+                        <label> 
+                            <input type="radio" name="hypomania2" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="hypomania2" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="hypomania2" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="hypomania2" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="hypomania2" value="4" required>Mycket
+                        </label>
+                    <h4>Känt dig nervös, ängslig, rädd, orolig eller på helspänn?</h4>
+                        <label> 
+                            <input type="radio" name="anxiety1" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="anxiety1" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="anxiety1" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="anxiety1" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="anxiety1" value="4" required>Mycket
+                        </label>
+                    <h4>Haft panikkänslor eller känt dig skräckslagen?</h4>
+                        <label> 
+                            <input type="radio" name="anxiety2" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="anxiety2" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="anxiety2" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="anxiety2" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="anxiety2" value="4" required>Mycket
+                        </label>
+                    <h4>Undvikit situationer som oroat dig?</h4>
+                        <label> 
+                            <input type="radio" name="anxiety3" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="anxiety3" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="anxiety3" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="anxiety3" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="anxiety3" value="4" required>Mycket
+                        </label>
+                    <h4>Haft värk och ont utan tydlig orsak 
+                    (t ex ont i huvudet, ryggen, lederna, magen, benen)?</h4>
+                        <label> 
+                            <input type="radio" name="somatization1" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="somatization1" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="somatization1" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="somatization1" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="somatization1" value="4" required>Mycket
+                        </label>
+                    <h4>Känt att dina besvär inte tagits tillräckligt mycket på allvar?</h4>
+                        <label> 
+                            <input type="radio" name="somatization2" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="somatization2" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="somatization2" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="somatization2" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="somatization2" value="4" required>Mycket
+                        </label>
+                    <h4>Haft tankar på att skada dig själv?</h4>
+                        <label> 
+                            <input type="radio" name="suicidality" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="suicidality" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="suicidality" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="suicidality" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="suicidality" value="4" required>Mycket
+                        </label>
+                    <h4>Hört sådant som andra inte kunde höra, som t ex röster utan att det fanns 
+                    någon annan där?</h4>
+                        <label> 
+                            <input type="radio" name="psychosis1" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="psychosis1" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="psychosis1" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="psychosis1" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="psychosis1" value="4" required>Mycket
+                        </label>
+                    <h4>Känt det som om någon annan kunde höra dina tankar, eller att du själv 
+                    kunde höra vad någon annan tänkte?</h4>
+                        <label> 
+                            <input type="radio" name="psychosis2" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="psychosis2" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="psychosis2" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="psychosis2" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="psychosis2" value="4" required>Mycket
+                        </label>
+                    <h4>Sömnproblem av något slag?</h4>
+                        <label> 
+                            <input type="radio" name="sleep" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="sleep" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="sleep" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="sleep" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="sleep" value="4" required>Mycket
+                        </label>
+                    <h4>Problem med minnet (t ex att lära in något nytt) eller med orienteringen
+                    (t ex att hitta hem)?</h4>
+                        <label> 
+                            <input type="radio" name="memory" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="memory" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="memory" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="memory" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="memory" value="4" required>Mycket
+                        </label>
+                    <h4>Problem med obehagliga tankar, impulser eller bilder som gång på gång 
+                    dyker upp i sinnet?</h4>
+                        <label> 
+                            <input type="radio" name="ocd1" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="ocd1" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="ocd1" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="ocd1" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="ocd1" value="4" required>Mycket
+                        </label>
+                    <h4>Känt dig manad att upprepa vissa beteenden eller tankar om och om igen?</h4>
+                        <label> 
+                            <input type="radio" name="ocd2" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="ocd2" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="ocd2" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="ocd2" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="ocd2" value="4" required>Mycket
+                        </label>
+                    <h4>Känt dig bortkopplad eller fjärran från dig själv, din kropp, din omgivning 
+                        eller din egen livshistoria?</h4>
+                        <label> 
+                            <input type="radio" name="dissociation" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="dissociation" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="dissociation" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="dissociation" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="dissociation" value="4" required>Mycket
+                        </label>
+                    <h4>Inte vetat vem du egentligen är eller vad du vill ha ut av livet?</h4>
+                        <label> 
+                            <input type="radio" name="personality1" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="personality1" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="personality1" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="personality1" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="personality1" value="4" required>Mycket
+                        </label>
+                    <h4>Inte kunnat känna närhet till andra, eller inte kunnat glädja dig åt dina
+                    relationer till andra?</h4>
+                        <label> 
+                            <input type="radio" name="personality2" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="personality2" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="personality2" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="personality2" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="personality2" value="4" required>Mycket
+                        </label>
+                    <h4>Druckit minst 4 glas alkohol under en och samma dag? (1 glas = 50 cl folköl, 
+                    33cl starköl, 1 glas vin, 1 litet glas starkvin eller 4 cl sprit)</h4>
+                        <label> 
+                            <input type="radio" name="addiction1" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="addiction1" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="addiction1" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="addiction1" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="addiction1" value="4" required>Mycket
+                        </label>
+                    <h4>Rökt cigaretter, cigarr, pipa, eller snusat eller använt tuggtobak?</h4>
+                        <label> 
+                            <input type="radio" name="addiction2" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="addiction2" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="addiction2" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="addiction2" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="addiction2" value="4" required>Mycket
+                        </label>
+                    <h4>Använt något av följande preparat PÅ EGET INITIATIV (dvs utan läkarordination, i större mängd eller under längre tid än föreskrivet), t ex värktabletter, stimulantia  sömnmedel eller lugnande medel, eller tagit någon olaglig drog?</h4> 
+                        <label> 
+                            <input type="radio" name="addiction3" value="0" required>Inget
+                        </label>
+                        <label> 
+                            <input type="radio" name="addiction3" value="1" required>Obetydligt
+                        </label>
+                        <label> 
+                            <input type="radio" name="addiction3" value="2" required>Lite
+                        </label>
+                        <label>
+                            <input type="radio" name="addiction3" value="3" required>En hel del
+                        </label>
+                        <label>
+                            <input type="radio" name="addiction3" value="4" required>Mycket
+                        </label>
+                </fieldset>
+                <button type="submit" id="submitBtn">Skicka formulär</button>
+            </form>
+                <div>
+                    <p>Copyright © 2013 American Psychiatric Association. svensk ensamrätt Pilgrim
+                    Press AB. Får kopieras fritt för bruk i forskning och klinisk patientverksamhet.</p>
+                </div>
+    </main>
+
+    <footer>
+        <p> <span>&copy;ToMind - created by Tom Eek</span> <a href="about.html">Kontakt</a></p>    
+    </footer>
+</body>
+</html>

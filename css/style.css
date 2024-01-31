@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+html, body, nav, header, main, footer, div, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: min-content 130px max-width(1000px) min-content;
+    grid-template-rows: 80px 1fr auto;
+    grid-template-areas:
+        "header header header   header"
+        "nav    main   main     ."
+        "footer footer footer   footer";
+}
+
+h2 {
+    color: #0866FF;
+}
+
+header {
+    grid-area: header;
+    background-image: url(./img/ToMindLogo.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    border: #0866FF 2px solid;
+} 
+
+nav {
+    grid-area: nav;
+    padding-top: 10px;
+    border:2 px solid;
+    border-color: white;
+    background-image: url("../img/blueFlowers.png");
+    background-color:white;  
+}
+
+nav ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0866FF;
+    padding: 10px;
+    height: 20px;
+    font-weight: bold; 
+}
+
+nav a:hover {
+    color: white;
+    background-color: #0866FF;
+    border-radius: 6px;
+}
+
+#menuicon,
+#menucheckbox {
+    display: none;
+}
+
+nav ul ul {
+    margin-left: 1.5em;
+}
+
+nav li li {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+ol {
+    list-style-type:square;
+}
+
+ol li {
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    height: 50px;
+    border: #0866FF 2px solid;
+}
+
+footer a {
+    color: #0866FF;
+}
+
+
+
+legend {
+    font-weight: bold;
+}
+
+fieldset {
+    border-color: #0866FF;
+}
+
+#submitBtn {
+    border: 2px solid #0866FF;
+    background-color: white;
+    color: #0866FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 12px;
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse:collapse;
+    border: 2px solid #0866FF;
+}
+
+th, td {
+    border: 2px solid #0866FF;
+    padding: 5px;
+}
+
+.contact {
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.contact textarea {
+    width: 95%;
+    height: 100px;
+    resize: none;
+}
+
+.contact input {
+    width: 50%;
+    resize: none;
+}
+
+#contactSubmit{
+        border: 2px solid #0866FF;
+        background-color: white;
+        color: #0866FF;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        border-radius: 12px;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 10px;
+}
+
+#linkedInLogo {
+    max-width: 100px; 
+    padding: 20px;
+}
+
+a {
+    color: #0866FF;
+}
+
+#emotionalReaction {
+    max-width: 100%;
+}
+
+#cancel {
+    font-size: 16px;
+}
+
+@media screen and (max-width:760px) {
+    body {
+        grid-template-columns: minmax(200px, 1fr);
+        grid-template-rows: min-content 50px auto 50px;
+        grid-template-areas:
+            "nav"   
+            "header"
+            "main"
+            "footer";   
+    }  
+
+    html {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    label {
+        display: block;
+    }
+
+    fieldset {
+       border: none;
+    }
+
+    #menuicon {
+        background-image: url(../img/menuicon.png);
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    #menucheckbox ~ ul {
+        display: none;
+    }
+    #menucheckbox:checked ~ ul {
+        display: flex;
+    }
+
+    header img {
+        max-width: 200px;
+    }
+
+}

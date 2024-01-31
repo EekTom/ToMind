@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToMind</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <label for="menucheckbox" id="menuicon"></label>
+        <input type="checkbox" id="menucheckbox">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="therapy.html">Behandling</a></li>
+            <li><a href="assessment.html">Utredning</a></li>
+            <li><a href="screening.html">Självskattning</a></li>
+            <li><a href="about.html" class="thisPage">Om ToMind</a></li>
+        </ul>
+    </nav> 
+
+    <header>
+        <img src="img/ToMindLogo.png" alt="logo ToMind"> 
+    </header>
+
+    <main>
+        <div id="presentation">
+            <h2>Om ToMind</h2>
+            <p>ToMind drivs av Tom Eek, leg. psykolog specialist i neuropsykologi. För mer information, besök gärna min LinkedIn-profil genom att trycka på länken nedan.</p>
+            <a href="https://se.linkedin.com/in/tom-eek-60190221b"
+                target="_blank"> <img src="img/LI-Logo.png" alt="linkedInLogo" id="linkedInLogo">
+            </a>
+        </div>
+
+        <div id="prices">
+            <h2>Priser</h2>
+            <table>
+                <tr>
+                    <th>Tjänst</th>
+                    <th>Pris</th>
+                </tr>
+                <tr>
+                    <td>Behandling</td>
+                    <td>1200kr/1 tillfälle</td>                    
+                </tr>
+                <tr>
+                    <td>Videomöte</td>
+                    <td>1000kr/1 tillfälle</td>
+                </tr>
+                <tr>
+                    <td>Handledning/konsultation</td>
+                    <td>1500kr/1 tillfälle</td>
+                </tr>
+                <tr>
+                    <td>Utredning</td>
+                    <td>35000kr</td>
+                </tr>
+            </table>
+            <p id = "cancel">* Återbud lämnas 24 timmar före ett bokat möte. I annat fall debiteras hela kostnaden för det uteblivna mötet.</p>
+        </div>
+
+        <div id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Du kan gärna ta konakt via följande mejladress
+                <a href="mailto:eek.tom@gmail.com">eek.tom@gmail.com</a>
+                eller via formuläret nedan.
+            </p>
+            <form name="contactDetails" netlify>
+                <fieldset class="contact">
+                    <label for="name">* Namn: </label>
+                    <input type="text" id="name" name="name" required>
+                </fieldset>
+
+                <fieldset class="contact">
+                    <label for="email">* Epost: </label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset class="contact">
+                    <label for="message">* Meddelande: </label>
+                    <textarea name="message" id="message" required></textarea>
+                </fieldset>
+                <button type="submit" id="contactSubmit">Skick formulär</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p> <span>&copy;ToMind - created by Tom Eek</span> <a href="about.html">Kontakt</a></p>
+    </footer>
+</body>
+</html>
